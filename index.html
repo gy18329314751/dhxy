@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/vue.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+            <div class="box1">
+                    <div class="innner">
+                       <div class="box1-1">
+                           <img src="img/logo_b5525b7.png" alt="">
+                       </div>
+                       <div class="box1-2">
+                           <img src="img/5bee8aab5e60278271abf5f5cbt0p3rp.jpg" alt="">
+                       </div>
+                       <ul class="ul1">
+                           <li>注册账号</li>
+                           <li>购卡充值</li>
+                       </ul>
+                       <div class="box1-3">
+                          <span>网易游戏全目录 <img src="img/1111.jpg" alt=""></span>
+                       </div>
+                       <div class="vueBox">
+                            <div class="marquee">
+                                <div class="marquee_box">
+                                    <ul class="marquee_list" :class="{marquee_top:animate}">
+                                        <li v-for="(item, index) in marqueeList">
+                                            <span>{{item.name}}</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            <div class="wrap">
+                        <div class="nav">
+                            <div class="part-con clearfix">
+                                <a href=""class="btn-logo"></a>
+                                <div class="col-box fz0-box">
+                                    <a href="" class="nav-btn btn-icon coo">官网首页</a>
+                                    <a href="" class="nav-btn btn-icon">下载专区</a>
+                                    <a href="" class="nav-btn btn-icon">资料查询</a>
+                                    <a href="" class="nav-btn btn-icon">大话文化</a>
+                                    <a href="" class="nav-btn btn-icon">客户服务</a>
+                                    <a href="" class="nav-btn btn-icon">游戏论坛</a>
+                                </div>
+                                <div class="top-box-02 gzh-box">
+                                    <a href=""class="btn-icon btn-icon-04">
+                                        <i class="xue a1"></i>
+                                        微信公众号
+                                    </a>
+                                    <a href="" class="btn-icon btn-icon-06">
+                                        <i class="xue a2">
+                                        </i>
+                                        网易大神
+                                        <img class="img1" src="img/wjds_ewm_ba71fb2 (1).webp" alt="">
+                                    </a>
+                                    <div class="i-line"></div>
+                                </div>
+                                <div class="ovh-box search-box">
+                                    <input type="text">
+                                   <i class="xue btn-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weixin">
+                            <img src="img/小样儿2_e09f7cb%20(1).webp.jpg" alt="">
+                            <p>
+                                <strong>微信公众号</strong>>
+                                <br>
+                                扫描左侧二维码关注
+                                <br>
+                                <em>"大话西游2 | dhxy-2"</em>
+                            </p>
+                        </div>
+                    
+                        <!--banner-->
+                </div>
+            <div class="banner-box">
+                        <div class="item">
+                            <img class="img" src="img/5bd16b226f049474efe418e1BSSx24ut.jpg" alt=""> 
+                            <img class="img imag" src="img/5b927437a7f252de1899f42bAHKAM5yc.jpg" alt="">
+                        </div>
+                         <a href="javascript:;"class="banner-prev"></a>
+                        <a href="javascript:;" class="banner-next"></a>
+                 </div>                
+            <div class="box2">
+                <div class="inner">
+                        <div class="box2-1">
+                             <i class="i1"></i> 
+                             <i class="i2"></i>
+                             <i class="i3">
+                                 <a href=""title="帐号注册" class="a1">帐号注册</a>
+                                 <a href=""title="帐号充值" class="a2">帐号充值</a>
+                                 <a href=""title="新手指南" class="a3">新手指南</a>
+                                 <a href=""title="回归指引" class="a4">回归指引</a>
+                             </i>
+                        </div>
+                        <div class="box2-2">
+                            <div class="aaa">   
+                               <div>
+                                   <i class="i10"></i>
+                        
+                                   大闹天宫
+                               </div>
+                               <div>
+                                    <i class="i11"></i>
+                                    画里乾坤
+                               </div>
+                               <div>
+                                    <i class="i12"></i>
+                                    跨服帮战
+                               </div> 
+                            </div>
+                        </div>
+                        <div class="banner-nav" id="Jbanner_nav_01">
+                                <a href="javascript:;" class="tab_gf on">官方</a>
+                                <a href="javascript:;" class="tab_hz">合作</a>
+                        </div>
+
+                        <div class="slide-box mb"id="slide-box">
+                              <ul class="slide-wrapper">
+                                <li class="slide-item slide-fade">
+                                     <img src="img/5bea977c96dee4814d6457betTav6I9T" alt="">
+                                 </li>
+                                 <li class="slide-item slide-fade">
+                                     <img src="img/5bdae911143cfa12fdef493e1Yz0ZjyH" alt="">
+                                 </li>
+                                 <li class="slide-item slide-fade">
+                                     <img src="img/5bdae9858b74273b9b2b3b1c6oXJQE0a" alt="">
+                                 </li>
+                                 <li class="slide-item slide-fade">
+                                     <img src="img/5bd16b846f04947438400ebbgHyL4yDL" alt="">
+                                 </li>
+                                 <li class="slide-item slide-fade">
+                                     <img src="img/5b92746b7f9d2a838540cd4f4PmleRzx" alt="">
+                                 </li>
+                              </ul>
+                              <div class="slide-nav clearfix">
+                                   <a href="javascript:;" title="把酒言欢新服开启" class="now">
+                                       <span>把酒言欢新服开启</span>
+                                   </a>
+                                   <a href="javascript:;" title="入驻大神福利不断">
+                                       <span>入驻大神福利不断</span>
+                                   </a>
+                                   <a href="javascript:;" title="挑战大神赢取豪礼">
+                                       <span>挑战大神赢取豪礼</span>
+                                   </a>
+                                   <a href="javascript:;" title="2018开发组面对面">
+                                       <span>2018开发组面对面</span>
+                                   </a>
+                                   <a href="javascript:;" title="重出江湖好礼不断">
+                                       <span>重出江湖好礼不断</span>
+                                   </a>
+                              </div>
+                        </div>
+                       <div class="ddd">
+                          <div class="ccc">
+                              <a href="javascript:;" class="mop">
+                                  <i></i>
+                                  推荐
+                              </a>
+                              <a href="javascript:;">
+                                   <i></i>
+                                   无差别PK
+                              </a>
+                                <a href="javascript:;">
+                                    <i></i>
+                                    口袋版
+                               </a>
+                          </div>
+                          <div class="ddd_bottom">
+                              <div class="ddd_a">
+                                  <ul>
+                                      <li>  <span class="a1">十万元赞助！全服第一人气大帮线下聚会</span>
+                                            <span class="time">[11-19]</span>
+                                      </li>
+                                      <li>  <span class="a1">十万元赞助！全服第一人气大帮线下聚会</span>
+                                        <span class="time">[11-19]</span>
+                                     </li>
+                                     <li>  <span class="a1">十万元赞助！全服第一人气大帮线下聚会</span>
+                                    <span class="time">[11-19]</span>
+                                    </li>
+                                    <li>  <span class="a1">十万元赞助！全服第一人气大帮线下聚会</span>
+                                    <span class="time">[11-19]</span>
+                                  </li>
+                                  <li>  <span class="a1">十万元赞助！全服第一人气大帮线下聚会</span>
+                                   <span class="time">[11-19]</span>
+                                 </li>
+                                <li>  <span class="a1">十万元赞助！全服第一人气大帮线下聚会</span>
+                                <span class="time">[11-19]</span>
+                               </li>
+                                <li>  <span class="a1">十万元赞助！全服第一人气大帮线下聚会</span>
+                               <span class="time">[11-19]</span>
+                               </li>
+                           </ul>
+                           <ul>
+                                <li>  <span class="a1">
+                                        高手如林！2018无差别PK赛总决赛精彩看点
+                                        </span>
+                                      <span class="time">[08-11]</span>
+                                </li>
+                                <li>  <span class="a1">高手如林！2018无差别PK赛总决赛精彩看点</span>
+                                  <span class="time">[08-11]</span>
+                               </li>
+                               <li>  <span class="a1">高手如林！2018无差别PK赛总决赛精彩看点</span>
+                              <span class="time">[08-11]</span>
+                              </li>
+                              <li>  <span class="a1">高手如林！2018无差别PK赛总决赛精彩看点</span>
+                              <span class="time">[08-11]</span>
+                            </li>
+                            <li>  <span class="a1">高手如林！2018无差别PK赛总决赛精彩看点</span>
+                             <span class="time">[08-11]</span>
+                           </li>
+                          <li>  <span class="a1">高手如林！2018无差别PK赛总决赛精彩看点</span>
+                          <span class="time">[08-11]</span>
+                         </li>
+                          <li>  <span class="a1">高手如林！2018无差别PK赛总决赛精彩看点</span>
+                         <span class="time">[08-11]</span>
+                         </li>
+                     </ul>
+                     <ul>
+                            <li>  <span class="a1">
+                                    手机上的大话2 快来下载口袋版一起帮战
+                                    </span>
+                                  <span class="time">[08-20]</span>
+                            </li>
+                            <li>  <span class="a1">手机上的大话2 快来下载口袋版一起帮战</span>
+                              <span class="time">[08-20]</span>
+                           </li>
+                           <li>  <span class="a1">手机上的大话2 快来下载口袋版一起帮战</span>
+                          <span class="time">[08-20]</span>
+                          </li>
+                          <li>  <span class="a1">手机上的大话2 快来下载口袋版一起帮战</span>
+                          <span class="time">[08-20]</span>
+                        </li>
+                        <li>  <span class="a1">手机上的大话2 快来下载口袋版一起帮战</span>
+                         <span class="time">[08-20]</span>
+                       </li>
+                      <li>  <span class="a1">手机上的大话2 快来下载口袋版一起帮战</span>
+                      <span class="time">[08-20]</span>
+                     </li>
+                      <li>  <span class="a1">手机上的大话2 快来下载口袋版一起帮战</span>
+                     <span class="time">[08-20]</span>
+                     </li>
+                 </ul>
+                              </div>
+                        
+                                
+                          </div>
+                       </div>
+                       <div class="nnn">
+                          <a href=""></a>
+                       </div>
+                </div>
+            </div>   
+            <div class="box3">
+
+            </div> 
+</body>
+
+
+
+
+
+<script type="text/javascript">
+    const vm = new Vue({
+        el: ".vueBox",
+        data: {
+            animate: false,
+            marqueeList: [
+                {
+                    name: '游戏充值9.8折'
+                },
+                {
+                    name: '领取网易严选宝箱'
+                }
+            ]
+        },
+        created: function () {
+            setInterval(this.showMarquee, 2000)
+        },
+        methods: {
+            showMarquee: function () {
+                this.animate = true;
+                setTimeout(()=>{
+                    this.marqueeList.push(this.marqueeList[0]);
+                this.marqueeList.shift();
+                this.animate = false;
+            },500)},
+        }
+    });
+</script>
+</html>
